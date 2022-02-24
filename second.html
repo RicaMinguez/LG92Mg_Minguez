@@ -1,0 +1,64 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>LG 9.2 | Minguez | Second Page</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Rica Elaine B. Minguez">
+        <meta name="keywords" content="Minguez, Grade 9, Magnesium, 3rd Quarter, 2nd Graded Exercise, Javascript, LG 9.2, 2nd webpage">
+        <meta name="revised" content="24 February 2022">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="icon" href="icon.png" type="image/gif">
+    </head>
+    
+    <body>
+        <img id="leaves" src="./avocadoTreeLeaves.jpg" title="Leaves on one of the avocado trees growing next to my neighbour's house" height="500px" width="500px">
+        <!--this displays an image of part of an avocado tree (the image is one that I took myself), 
+            with a description that will show up when you hover over the image-->
+
+
+        <p>Shown in the picture is part of an avocado tree. The yellow-green clusters are like baby leaves that have yet to mature.</p>
+        <!--This gives a description of what is being shown in the image.-->
+
+
+        <button onclick="closeUp()">Click to see a close up of the picture above!</button>
+        <!--this button will make the 2nd image (zoomed-in version of the first image) show up-->
+
+        <button onclick="fullImage()">Click to go back to the many branches of leaves!</button>
+        <!--this button will make the 1st image (default image of part of an avocado tree) show up-->
+
+
+        <script>
+
+            function fullImage() {
+                leaves.src = "./avocadoTreeLeaves.jpg";
+                /*when this function is called, the default image (branches of an avocade tree) will be shown, 
+                by changing the contents of the src property of the image with the id "leaves"*/
+            }
+
+            function closeUp() {
+                leaves.src = "./avocadoTreeLeavesCloseUp.jpg";
+                /*when this function is called, the second image (zoomed-in version of default image) will be 
+                shown, by changing the contents of the src property of the image with the id "leaves"*/
+            }
+        </script>
+
+    <!--
+        References used: 
+        Window open(). (n.d.). https://www.w3schools.com/jsref/met_win_open.asp 
+        (webpage and included example/s were accessed on 2022, Feb. 23)
+
+        onclick Event. (n.d.). https://www.w3schools.com/jsref/event_onclick.asp
+        (accessed on 2022, Feb. 24)
+
+        Entries in stackoverflow.com:
+        Václav, A. & user5869235. (2016, February 22). Opening another HTML file through window.open. 
+        https://stackoverflow.com/questions/35563709/opening-another-html-file-through-window-open (accessed on 2022, Feb. 24)
+
+        Computer Science 3 Learning Guides, code examples given by Ma'am Aline, 
+        video recording of lesson on Feb. 21, 2022, and my own notes
+    -->
+    </body>
+    
+    </html>

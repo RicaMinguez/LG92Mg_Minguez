@@ -1,0 +1,50 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>LG 9.2 | Minguez | Start Page</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Rica Elaine B. Minguez">
+        <meta name="keywords" content="Minguez, Grade 9, Magnesium, 3rd Quarter, 2nd Graded Exercise, Javascript, LG 9.2, start webpage">
+        <meta name="revised" content="24 February 2022">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="icon" href="icon.png" type="image/gif">
+    </head>
+    
+    <body onload="message()" onclick="secondPage()"> 
+    <!--The short greeting message (see definition of function message() below) will be displayed once the page loads, instructing
+     the user to click anywhere on the page to go to the second page (which is achieved using the function secondPage()).-->
+
+        <h1>Start Page</h1> <!--this header is here to make it clear that this is the first webpage, not the second-->
+
+        <script>
+            function message() {
+                window.alert("Hello! This is the start page. Click anywhere on the webpage to be redirected to the second page.");
+                //when this function is called, a window alert will pop up and display the message shown in the quotation marks
+            }
+
+            function secondPage() {
+                window.open("./second.html");
+                //when this function is called, the webpage 'second.html', which is in the same folder as this webpage, will be opened.
+            }
+        </script>
+
+    <!--
+        References used: 
+        Window open(). (n.d.). https://www.w3schools.com/jsref/met_win_open.asp 
+        (webpage and included example/s were accessed on 2022, Feb. 23)
+
+        onclick Event. (n.d.). https://www.w3schools.com/jsref/event_onclick.asp
+        (accessed on 2022, Feb. 24)
+
+        Entries in stackoverflow.com:
+        Václav, A. & user5869235. (2016, February 22). Opening another HTML file through window.open. 
+        https://stackoverflow.com/questions/35563709/opening-another-html-file-through-window-open (accessed on 2022, Feb. 24)
+
+        Computer Science 3 Learning Guides, code examples given by Ma'am Aline, 
+        video recording of lesson on Feb. 21, 2022, and my own notes
+    -->
+    </body>
+    
+    </html>
